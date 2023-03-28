@@ -1,0 +1,1077 @@
+* {
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.container {
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.5;
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+.container .nav-bar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-top: 0.8rem;
+  position: sticky;
+  justify-self: center;
+  padding: 0 1rem 1rem 1rem;
+  outline: 0;
+  border: 0;
+  top: 0;
+  z-index: 1001;
+  opacity: 1;
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.722) !important;
+}
+@media only screen and (max-width: 1000px) {
+  .container .nav-bar {
+    width: 100%;
+    padding: 2rem 0;
+    margin-top: 2rem;
+  }
+}
+.container .nav-bar .nav-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container .nav-bar .nav-left .list-link-all {
+  width: 100%;
+}
+.container .nav-bar .nav-left .list-link-all .svg-nav {
+  width: 0.6rem;
+  margin-right: 0.3rem;
+}
+.container .nav-bar .nav-left .list-link-all .list-main-left {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  font-family: "vasir-extralight";
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin-left: 11rem;
+}
+@media only screen and (max-width: 1000px) {
+  .container .nav-bar .nav-left .list-link-all .list-main-left {
+    display: none;
+  }
+}
+.container .nav-bar .nav-left .list-link-all .list-main-left .nav-item-hov {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+.container .nav-bar .nav-left .list-link-all .list-main-left .nav-item-hov .inside-hov {
+  min-width: 372px;
+  height: 250px;
+  display: flex;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  position: absolute;
+  text-align: right;
+  margin-top: -10rem;
+  margin-right: 10rem;
+  border-bottom: 1px solid hsla(0deg, 0%, 100%, 0.07);
+  box-shadow: 0 20px 40px 0 rgba(36, 39, 51, 0.15);
+  border-radius: 12px;
+  border-top: 5px solid #f8e88b;
+}
+.container .nav-bar .nav-left .list-link-all .list-main-left .nav-item-hov .inside-hov .text-inside {
+  padding: 0 2.2rem 0 2.2rem;
+}
+.container .nav-bar .nav-left .list-link-all .list-main-left .nav-item-hov .inside-hov .text-inside:hover {
+  background-color: rgba(229, 237, 251, 0.748);
+}
+.container .nav-bar .nav-left .list-link-all .list-main-left .nav-item-hov .inside-hov .heading-inside {
+  font-family: "vasir-thin";
+  margin: 0;
+}
+.container .nav-bar .nav-left .list-link-all .list-main-left .nav-item-hov .inside-hov .heading-inside .link-inside {
+  color: #303030;
+  text-decoration: none;
+}
+.container .nav-bar .nav-left .list-link-all .list-main-left .nav-item-hov .inside-hov .phara-inside {
+  font-family: "vasir-thin";
+}
+.container .nav-bar .nav-left .list-link-all .list-main-left .nav-item-hov:hover .inside-hov {
+  min-width: 372px;
+  height: 250px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  z-index: 999;
+  margin-top: 17.8rem;
+  margin-right: -150px;
+  text-align: right;
+  border-bottom: 1px solid hsla(0deg, 0%, 100%, 0.07);
+  box-shadow: 0 20px 40px 0 rgba(36, 39, 51, 0.15);
+  border-radius: 12px;
+  border-top: 5px solid #f8e88b;
+}
+.container .nav-bar .nav-left .list-link-all .list-main-left .nav-item {
+  padding: 0 0.8rem;
+  text-decoration: none;
+  list-style: none;
+  color: #303030;
+}
+.container .nav-bar .nav-left .list-link-all .nav-item-hov-2 {
+  position: relative;
+  cursor: default;
+}
+.container .nav-bar .nav-left .list-link-all .nav-item-hov-2 .inside-hov-2 {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  position: absolute;
+  min-width: 123px;
+  height: 200px;
+  margin-top: 10px;
+  margin-right: -40px;
+  text-align: right;
+  background-color: #fff;
+  border-bottom: 1px solid hsla(0deg, 0%, 100%, 0.07);
+  box-shadow: 0 20px 40px 0 rgba(36, 39, 51, 0.15);
+  border-radius: 12px;
+  border-top: 5px solid #f8e88b;
+  padding-top: 20px;
+  margin-top: -10rem;
+  margin-right: 10rem;
+}
+.container .nav-bar .nav-left .list-link-all .nav-item-hov-2 .inside-hov-2 .inside-link .link-inside-2 {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.685);
+  font-family: "vasir-regular";
+  display: block;
+  padding: 0.5rem 0;
+  padding-right: 0.8rem;
+}
+.container .nav-bar .nav-left .list-link-all .nav-item-hov-2 .inside-hov-2 .inside-link .link-inside-2:hover {
+  background-color: rgba(229, 237, 251, 0.748);
+}
+.container .nav-bar .nav-left .list-link-all .nav-item-hov-2:hover .inside-hov-2 {
+  min-width: 130px;
+  height: 200px;
+  position: absolute;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  z-index: 999;
+  margin-top: 5px;
+  text-align: right;
+  border-bottom: 1px solid hsla(0deg, 0%, 100%, 0.07);
+  box-shadow: 0 20px 40px 0 rgba(36, 39, 51, 0.15);
+  border-radius: 12px;
+  border-top: 5px solid #f8e88b;
+  margin-top: 0;
+  margin-right: -1.5rem;
+}
+.container .nav-bar .main-link-left {
+  width: 100%;
+}
+.container .nav-bar .main-link-left .main-link {
+  width: 75%;
+  display: inline-block;
+  text-decoration: none;
+  color: #28457b;
+  padding: 0.5rem;
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-left: 4rem;
+  text-align: center;
+  font-family: "vasir-medium";
+}
+@media only screen and (max-width: 700px) {
+  .container .nav-bar .main-link-left .main-link {
+    display: none;
+  }
+}
+.container .nav-bar .main-link-left .main-link:hover {
+  background-color: rgba(228, 197, 0, 0.15);
+}
+.container .nav-right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+  .container .nav-right {
+    position: absolute;
+  }
+}
+.container .nav-right .header-link-logo {
+  width: 100%;
+  padding: 1rem;
+  background: url(../images/header-logo/logo-header-right.svg) no-repeat right center;
+}
+.container .section-mobile {
+  width: 82%;
+  height: 44rem;
+  border-radius: 20px;
+  margin-top: 2.5rem;
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-between;
+  background: url(../images/section/section-wave.svg) no-repeat, linear-gradient(135deg, #21254e, #2b4a83);
+}
+@media only screen and (max-width: 1000px) {
+  .container .section-mobile {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+}
+.container .section-mobile .section-mobile-right {
+  width: 50%;
+}
+@media only screen and (max-width: 1000px) {
+  .container .section-mobile .section-mobile-right {
+    width: 100%;
+  }
+}
+.container .section-mobile .section-mobile-right .section-mobile-title-1,
+.container .section-mobile .section-mobile-right .section-mobile-title-2 {
+  color: #fff;
+  font-family: "vasir-black";
+  font-size: 1.8rem;
+  margin-right: 3.4rem;
+}
+.container .section-mobile .section-mobile-right .section-mobile-title-1 {
+  margin-top: 6.8rem;
+  margin-bottom: -1.45rem;
+}
+.container .section-mobile .section-mobile-right .section-mobile-text {
+  width: 78%;
+  line-height: 2.3;
+  margin: 0 auto;
+  text-align: right;
+  font-family: "vasir-regular";
+  color: #fff;
+  word-spacing: 0.1px;
+}
+@media only screen and (max-width: 1000px) {
+  .container .section-mobile .section-mobile-right .section-mobile-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+.container .section-mobile .section-mobile-right .section-mobile-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 4rem;
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 650px) {
+  .container .section-mobile .section-mobile-right .section-mobile-buttons {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.container .section-mobile .section-mobile-right .section-mobile-buttons .section-mobile-btn {
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  outline: none;
+  border: 0;
+  background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0 no-repeat padding-box;
+  font-family: "vasir-bold";
+  color: #000;
+  text-decoration: none;
+}
+.container .section-mobile .section-mobile-right .section-mobile-buttons .section-mobile-btn-2 {
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  outline: none;
+  color: #fff;
+  margin-right: 0.65rem;
+  border: 0;
+  font-family: "vasir-bold";
+  background: #435a8a 0 0 no-repeat padding-box;
+  font-family: "vasir-black";
+  color: #fff;
+  text-decoration: none;
+}
+.container .section-mobile .section-mobile-left {
+  width: 50%;
+}
+@media only screen and (max-width: 1000px) {
+  .container .section-mobile .section-mobile-left {
+    display: none;
+  }
+}
+.container .section-mobile .section-mobile-left .section-mobile-img {
+  width: 100%;
+  height: 100%;
+  background: url(../images/section/section-mobile.svg) no-repeat 60px/contain;
+}
+.container .end-section-mobile {
+  width: 82%;
+  padding: 2rem;
+  background: url(../images/section/arrowbottom.svg) no-repeat center;
+  margin-top: -44px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container .end-section-mobile .svg-section-mobile {
+  width: 1.2rem;
+  position: relative;
+  top: -18px;
+}
+.container .section-createAccount {
+  width: 82%;
+  height: 36rem;
+  margin-top: 8.5rem;
+  display: flex;
+}
+.container .section-createAccount .section-createAccount-right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .section-createAccount .section-createAccount-right .sectionAccount-right-img {
+  width: 80%;
+  display: inline-block;
+  margin-top: -3rem;
+  margin-left: 8rem;
+  background: url(../images/section-create/pg.svg) no-repeat right/contain;
+}
+.container .section-createAccount .section-createAccount-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .section-createAccount .section-createAccount-left .heading-section-createAccount {
+  color: #747480;
+  margin: 0;
+  font-family: "vasir-extralight";
+  font-size: 1.35rem;
+}
+.container .section-createAccount .section-createAccount-left .heading-section-createAccount-2 {
+  font-family: "vasir-black";
+  font-size: 1.9rem;
+  margin: 10px 0 0 0;
+  color: #303030;
+}
+.container .section-createAccount .section-createAccount-left .phara-section-createAccount {
+  width: 90%;
+  font-size: 1.1rem;
+  font-family: "vasir-light";
+  text-align: justify;
+  word-spacing: -5px;
+  letter-spacing: -0.2px;
+  line-height: 2.4;
+}
+.container .section-createAccount .section-createAccount-left .section-createAccount-line {
+  width: 90%;
+  height: 1px;
+  background-color: #dfe1e4;
+}
+.container .section-createAccount .section-createAccount-left .section-createAccount-buttons {
+  display: flex;
+  margin-top: 2.3rem;
+}
+.container .section-createAccount .section-createAccount-left .section-createAccount-buttons .section-createAccount-item {
+  text-decoration: none;
+  color: #000;
+  padding: 0.2rem 0.4rem;
+  border-radius: 10px;
+  font-family: "vasir-regular";
+  background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0 no-repeat padding-box;
+}
+.container .section-createAccount .section-createAccount-left .section-createAccount-buttons .section-createAccount-item-2 {
+  text-decoration: none;
+  color: #28457b;
+  padding: 0.3rem 0.4rem;
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 10px;
+  font-family: "vasir-regular";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.6rem;
+}
+.container .section-createAccount .section-createAccount-left .section-createAccount-buttons .section-createAccount-item-2 .svg-section-createAccount {
+  background: url(../images/section-create/arrow-left.svg) no-repeat center/contain;
+  width: 0.9rem;
+  height: 13px;
+  margin-right: 0.3rem;
+  margin-top: 4px;
+}
+.container .section-social {
+  width: 82%;
+  display: flex;
+}
+.container .section-social .section-social-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.container .section-social .section-social-right .heading-section-social {
+  color: #747480;
+  font-family: "vasir-extralight";
+  word-spacing: -4px;
+  font-size: 1.3rem;
+  margin: 0;
+}
+.container .section-social .section-social-right .heading-section-social-2 {
+  font-family: "vasir-black";
+  font-size: 1.9rem;
+  margin: 10px 0 0 0;
+  color: #303030;
+}
+.container .section-social .section-social-right .phara-social {
+  width: 100%;
+  font-size: 1rem;
+  font-family: "vasir-light";
+  text-align: justify;
+  word-spacing: -2px;
+  line-height: 2.4;
+}
+.container .section-social .section-social-right .section-social-line {
+  width: 100%;
+  height: 1px;
+  background-color: #dfe1e4;
+}
+.container .section-social .section-social-right .section-social-buttons {
+  display: flex;
+  margin-top: 2.3rem;
+}
+.container .section-social .section-social-right .section-social-buttons .section-social-item {
+  text-decoration: none;
+  color: #000;
+  padding: 0.2rem 0.4rem;
+  border-radius: 10px;
+  font-family: "vasir-regular";
+  background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0 no-repeat padding-box;
+}
+.container .section-social .section-social-right .section-social-buttons .section-social-item-2 {
+  text-decoration: none;
+  color: #28457b;
+  padding: 0.3rem 0.4rem;
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 10px;
+  font-family: "vasir-regular";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.6rem;
+}
+.container .section-social .section-social-right .section-social-buttons .section-social-item-2 .svg-section-social {
+  background: url(../images/section-social/arrow-left.svg) no-repeat center/contain;
+  width: 0.9rem;
+  height: 13px;
+  margin-right: 0.3rem;
+  margin-top: 4px;
+}
+.container .section-social .section-social-left {
+  width: 60%;
+  display: flex;
+}
+.container .section-social .section-social-left .section-social-img {
+  width: 50%;
+  transform: scale(2.6);
+  margin-right: 13rem;
+  margin-top: 3rem;
+  background: url(../images/section-social/social-image.svg) no-repeat center/contain;
+}
+.container .section-gold {
+  width: 82%;
+  height: 30rem;
+  margin-top: 20rem;
+  display: flex;
+}
+.container .section-gold .section-gold-right {
+  width: 100%;
+  display: flex;
+}
+.container .section-gold .section-gold-right .section-gold-img {
+  width: 100%;
+  display: inline-block;
+  margin-left: 11rem;
+  background: url(../images/section-gold/zarincard\ .svg) no-repeat center/contain;
+}
+.container .section-gold .section-gold-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .section-gold .section-gold-left .heading-section-gold {
+  color: #747480;
+  margin: 0;
+  font-family: "vasir-extralight";
+  font-size: 1.4rem;
+}
+.container .section-gold .section-gold-left .heading-section-gold-2 {
+  font-family: "vasir-black";
+  font-size: 1.9rem;
+  margin: 5px 0 0 0;
+  color: #303030;
+}
+.container .section-gold .section-gold-left .phara-section-gold {
+  width: 90%;
+  font-size: 1rem;
+  font-family: "vasir-light";
+  text-align: justify;
+  word-spacing: -4px;
+  letter-spacing: -0.2px;
+  line-height: 2.4;
+}
+.container .section-gold .section-gold-left .section-gold-line {
+  width: 90%;
+  height: 1px;
+  background-color: #dfe1e4;
+}
+.container .section-gold .section-gold-left .section-gold-buttons {
+  display: flex;
+  margin-top: 2.3rem;
+}
+.container .section-gold .section-gold-left .section-gold-buttons .section-gold-item {
+  text-decoration: none;
+  color: #000;
+  padding: 0.2rem 0.4rem;
+  border-radius: 10px;
+  font-family: "vasir-regular";
+  background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0 no-repeat padding-box;
+}
+.container .section-gold .section-gold-left .section-gold-buttons .section-gold-item-2 {
+  text-decoration: none;
+  color: #28457b;
+  padding: 0.3rem 0.4rem;
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 10px;
+  font-family: "vasir-regular";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.6rem;
+}
+.container .section-gold .section-gold-left .section-gold-buttons .section-gold-item-2 .svg-section-gold {
+  background: url(../images/section-gold/arrow-left.svg) no-repeat center/contain;
+  width: 0.9rem;
+  height: 13px;
+  margin-right: 0.3rem;
+  margin-top: 4px;
+}
+.container .section-tashim {
+  width: 82%;
+  height: 30rem;
+  display: flex;
+}
+.container .section-tashim .section-tashim-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.container .section-tashim .section-tashim-right .heading-section-tashim {
+  color: #747480;
+  font-family: "vasir-extralight";
+  word-spacing: -4px;
+  font-size: 1.3rem;
+  margin: 0;
+}
+.container .section-tashim .section-tashim-right .heading-section-tashim-2 {
+  font-family: "vasir-black";
+  font-size: 1.9rem;
+  margin: 5px 0 0 0;
+  color: #303030;
+}
+.container .section-tashim .section-tashim-right .phara-section-tashim {
+  width: 100%;
+  font-size: 1rem;
+  font-family: "vasir-light";
+  text-align: justify;
+  word-spacing: -2px;
+  letter-spacing: -0.3px;
+  line-height: 2;
+}
+.container .section-tashim .section-tashim-right .section-tashim-line {
+  width: 100%;
+  height: 1px;
+  background-color: #dfe1e4;
+}
+.container .section-tashim .section-tashim-right .section-tashim-buttons {
+  display: flex;
+  margin-top: 2.3rem;
+}
+.container .section-tashim .section-tashim-right .section-tashim-buttons .section-tashim-item {
+  text-decoration: none;
+  color: #000;
+  padding: 0.2rem 0.4rem;
+  border-radius: 10px;
+  font-family: "vasir-regular";
+  background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0 no-repeat padding-box;
+}
+.container .section-tashim .section-tashim-right .section-tashim-buttons .section-tashim-item-2 {
+  text-decoration: none;
+  color: #28457b;
+  padding: 0.3rem 0.4rem;
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 10px;
+  font-family: "vasir-regular";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.6rem;
+}
+.container .section-tashim .section-tashim-right .section-tashim-buttons .section-tashim-item-2 .svg-section-tashim {
+  background: url(../images/section-tashim/arrow-left.svg) no-repeat center/contain;
+  width: 0.9rem;
+  height: 13px;
+  margin-right: 0.3rem;
+  margin-top: 4px;
+}
+.container .section-tashim .section-tashim-left {
+  width: 100%;
+  display: flex;
+}
+.container .section-tashim .section-tashim-left .section-tashim-img {
+  width: 80%;
+  margin-right: 9rem;
+  background: url(../images/section-tashim/payout.svg) no-repeat center/contain;
+}
+.container .section-plus {
+  width: 82%;
+  height: 30rem;
+  display: flex;
+}
+.container .section-plus .section-plus-right {
+  width: 100%;
+  display: flex;
+}
+.container .section-plus .section-plus-right .section-plus-img {
+  width: 100%;
+  display: inline-block;
+  margin-top: -11rem;
+  margin-left: 10rem;
+  background: url(../images/section-plus/zarinplus.svg) no-repeat center/contain;
+}
+.container .section-plus .section-plus-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .section-plus .section-plus-left .heading-section-plus {
+  color: #747480;
+  margin: 0;
+  font-family: "vasir-extralight";
+  font-size: 1.4rem;
+}
+.container .section-plus .section-plus-left .heading-section-plus-2 {
+  font-family: "vasir-black";
+  font-size: 1.9rem;
+  margin: 5px 0 0 0;
+  color: #303030;
+}
+.container .section-plus .section-plus-left .phara-section-plus {
+  width: 90%;
+  font-size: 1rem;
+  font-family: "vasir-light";
+  text-align: justify;
+  word-spacing: -4px;
+  letter-spacing: -0.2px;
+  line-height: 2.4;
+}
+.container .section-plus .section-plus-left .section-plus-line {
+  width: 90%;
+  height: 1px;
+  background-color: #dfe1e4;
+}
+.container .section-plus .section-plus-left .section-plus-buttons {
+  display: flex;
+  margin-top: 2.3rem;
+}
+.container .section-plus .section-plus-left .section-plus-buttons .section-plus-item {
+  text-decoration: none;
+  color: #000;
+  padding: 0.2rem 0.4rem;
+  border-radius: 10px;
+  font-family: "vasir-regular";
+  background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0 no-repeat padding-box;
+}
+.container .section-plus .section-plus-left .section-plus-buttons .section-plus-item-2 {
+  text-decoration: none;
+  color: #28457b;
+  padding: 0.3rem 0.4rem;
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 10px;
+  font-family: "vasir-regular";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.6rem;
+}
+.container .section-plus .section-plus-left .section-plus-buttons .section-plus-item-2 .svg-section-plus {
+  background: url(../images/section-plus/arrow-left.svg) no-repeat center/contain;
+  width: 0.9rem;
+  height: 13px;
+  margin-right: 0.3rem;
+  margin-top: 4px;
+}
+.container .section-moreDetail {
+  width: 82%;
+  display: flex;
+}
+.container .section-moreDetail .section-moreDetail-right {
+  width: 50%;
+}
+.container .section-moreDetail .section-moreDetail-right .heading-moreDetail {
+  font-family: "vasir-black";
+  font-size: 1.75rem;
+}
+.container .section-moreDetail .section-moreDetail-right .phara-moreDetail {
+  width: 80%;
+  font-family: "vasir-light";
+  text-align: justify;
+  line-height: 2.1;
+  word-spacing: -3px;
+  letter-spacing: -0.5px;
+}
+.container .section-moreDetail .section-moreDetail-left {
+  width: 100%;
+  display: flex;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items {
+  width: 100%;
+  display: flex;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-1 {
+  width: 50%;
+  border-left: 1px solid #e0e4e7;
+  display: flex;
+  flex-direction: column;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-1 .total-right {
+  width: 100%;
+  border-bottom: 1px solid #e0e4e7;
+  margin-top: -2rem;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-1 .heading-item-img-1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-1 .heading-item-img-1 .heading-moreDetail-item {
+  width: 10%;
+  display: inline-block;
+  background: url(../images/moreDetail/verifiedIcon.svg) no-repeat center/contain;
+  transform: scale(2);
+  margin-left: 1rem;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-1 .phara-moreDetail {
+  width: 90%;
+  text-align: justify;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-family: "vasir-light";
+  line-height: 2;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-1 .heading-item-img-2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-1 .heading-item-img-2 .heading-moreDetail-item-2 {
+  width: 10%;
+  display: inline-block;
+  background: url(../images/moreDetail/splite.svg) no-repeat center/contain;
+  transform: scale(2);
+  margin-left: 1rem;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-2 .total-left {
+  width: 100%;
+  border-bottom: 1px solid #e0e4e7;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-2 .heading-item-img-1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 1rem;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-2 .heading-item-img-1 .heading-moreDetail-item {
+  width: 10%;
+  display: inline-block;
+  background: url(../images/moreDetail/verifiedIcon.svg) no-repeat center/contain;
+  transform: scale(2);
+  margin-left: 1rem;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-2 .phara-moreDetail {
+  width: 90%;
+  text-align: justify;
+  font-family: "vasir-light";
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  line-height: 2;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-2 .heading-item-img-2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+.container .section-moreDetail .section-moreDetail-left .section-moreDetail-items .section-moreDetail-item-2 .heading-item-img-2 .heading-moreDetail-item-2 {
+  width: 10%;
+  display: inline-block;
+  background: url(../images/moreDetail/splite.svg) no-repeat center/contain;
+  transform: scale(2);
+  margin-left: 1rem;
+}
+.container .section-gift {
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  border: 1px solid #c3c6cd;
+  border-radius: 20px;
+}
+.container .section-gift .heading-gift {
+  font-family: "vasir-black";
+  word-spacing: -3px;
+  margin-bottom: 0;
+}
+.container .section-gift .heading-gift-2 {
+  font-family: "vasir-extralight";
+  white-space: -6px;
+  letter-spacing: -0.5px;
+  font-size: 1.2rem;
+  color: #747480;
+}
+.container .section-gift .button-gift {
+  text-decoration: none;
+  color: #000;
+  padding: 0.2rem 0.4rem;
+  border-radius: 10px;
+  font-family: "vasir-regular";
+  background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0 no-repeat padding-box;
+  margin-bottom: 1.9rem;
+}
+.container .detail {
+  width: 82%;
+  height: 5rem;
+  display: flex;
+  margin-top: 4rem;
+  border-radius: 35px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fbf6f1;
+}
+@media only screen and (max-width: 1000px) {
+  .container .detail {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+  }
+}
+.container .detail .text-detail {
+  width: 100%;
+  font-family: "vasir-black";
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+  .container .detail .text-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+  }
+}
+.container .detail .text-detail .style-num {
+  font-family: "vasir-black";
+  font-size: 1.5rem;
+  color: #21457f;
+}
+.container .detail .text-arrow-detail {
+  width: 100%;
+  text-align: end;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container .detail .text-arrow-detail .img-detail {
+  background: url(../images/detail/arrow-left.svg) no-repeat center/contain;
+  width: 1rem;
+  margin: 0 0;
+  margin-right: 1rem;
+  transform: scale(1.5);
+  height: 13px;
+  margin-left: 0;
+  margin-top: 5px;
+}
+.container .detail .text-arrow-detail .link-detail {
+  text-decoration: none;
+  color: #21457f;
+  font-family: "vasir-regular";
+  font-size: 1.5rem;
+}
+.container .section-footer {
+  width: 82%;
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 1000px) {
+  .container .section-footer {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.container .section-footer .item {
+  margin: 0 2rem;
+  font-family: "vasir-light";
+}
+.container .section-footer .item .heading-footer {
+  font-family: "vasir-extrabold";
+  font-size: 1.2rem;
+}
+.container .section-footer .item .items-item {
+  list-style: none;
+  padding: 0;
+}
+.container .section-footer .item .items-item > li {
+  padding: 0.7rem 0;
+}
+.container .section-footer .total-logo {
+  width: 100%;
+  display: flex;
+}
+.container .section-footer .total-logo .ins {
+  background: url(../images/footer/instagram.svg) no-repeat center/contain;
+  width: 10px;
+  padding: 20px;
+  background-color: #eff4fe;
+  border-radius: 12px;
+}
+.container .section-footer .total-logo .tel {
+  background: url(../images/footer/telegram.svg) no-repeat center/contain;
+  width: 10px;
+  padding: 20px;
+  background-color: #eff4fe;
+  border-radius: 12px;
+}
+.container .section-footer .total-logo .aparat {
+  background: url(../images/footer/aparat.svg) no-repeat center/contain;
+  width: 10px;
+  padding: 20px;
+  background-color: #eff4fe;
+  border-radius: 12px;
+}
+.container .section-footer .total-logo .twi {
+  background: url(../images/footer/twitter.svg) no-repeat center/contain;
+  width: 10px;
+  padding: 20px;
+  background-color: #eff4fe;
+  border-radius: 12px;
+}
+.container .section-footer .total-logo .link {
+  background: url(../images/footer/linkedin.svg) no-repeat center/contain;
+  width: 10px;
+  padding: 20px;
+  background-color: #eff4fe;
+  border-radius: 12px;
+}
+.container .footer-end {
+  width: 100%;
+  text-align: center;
+  font-family: "vasir-light";
+  padding: 1rem;
+  margin: 3rem;
+  font-size: 1.1rem;
+}
+
+@font-face {
+  font-family: "vasir-black";
+  src: url(fonts/Vazirmatn-Black.woff2) format("woff2");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "vasir-extrabold";
+  src: url(fonts/Vazirmatn-Extrabold.woff2) format("woff2");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "vasir-semibold";
+  src: url(fonts/Vazirmatn-SemiBold.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "vasir-bold";
+  src: url(fonts/Vazirmatn-Bold.woff2) format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "vasir-medium";
+  src: url(fonts/Vazirmatn-Medium.woff2) format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "vasir-regular";
+  src: url(fonts/Vazirmatn-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "vasir-light";
+  src: url(fonts/Vazirmatn-Light.woff2) format("woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "vasir-extralight";
+  src: url(fonts/Vazirmatn-ExtraLight.woff2) format("woff2");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "vasir-thin";
+  src: url(fonts/Vazirmatn-Thin.woff2) format("woff2");
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=main.css.map */
